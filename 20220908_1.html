@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dl 연습</title>
+</head>
+<body>
+    <dl>
+        <dt>나의 통학수단</dt>
+        <dd>학교버스</dd>
+        <dd>버스</dd>
+        <dd>택시</dd>
+        <dt>나의 식당(점심)</dt>
+        <dd>학생식당</dd>
+        <dd>편의점(CU)</dd>
+        <dd>한솥도시락</dd>
+    </dl>
+    <table border="1">
+        <tr>
+            <th>학번</th>
+            <th>이름</th>
+            <th>성별</th>
+        </tr>
+        <tr>
+            <td>202102992</td>
+            <td>노영웅</td>
+            <td>남</td>
+        </tr>
+        <tr>
+            <td>202102995</td>
+            <td>박세희</td>
+            <td>여</td>
+        </tr>
+    </table>
+    <table>
+        <h3>colspan 예제</h3>
+        <table border="1">
+            <figcaption>
+                <b>인적사항</b>
+                <p>개인정보 입력 및 명세</p>
+            </figcaption>
+            <tr>
+                <th>학번</th>
+                <td>202102992</td>
+                <th>이름</th>
+                <td>노영웅</td>
+            </tr>
+            <tr>
+                <th>성별</th>
+                <td colspan="3">남</td>
+            </tr>
+            <tr>
+                <th>전화번호</th>
+                <td colspan="3">010-1234-5678</td>
+            </tr>
+            <tr>
+                <th>주소</th>
+                <td colspan="3"></td>
+            </tr>
+    </table>
+    <table border="1", height="60">
+        <caption>colgroup 연습</caption>
+        <colgroup>
+            <col width="50px">
+            <col width="100px" span="2" style="background-color:blue;">
+            <col width="200px" style="background-color: yellow">
+        </colgroup>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+    <table border="1">
+        <figcaption>
+            <b>신상명세카드</b>
+        </figcaption>
+        <colgroup>
+            <col style="background-color: yellowgreen;">
+            <col style="background-color: royalblue;">
+        </colgroup>
+        <tr>
+            <th>학과</th>
+            <td>인공지능학부</td>
+        </tr>
+        <tr>
+            <th>학번</th>
+            <td>202102992</td>
+        </tr>
+        <tr>
+            <th>이름</th>
+            <td>노영웅</td>
+        </tr>
+        <tr>
+            <th>성별</th>
+            <td>남</td>
+        </tr>
+        <tr>
+            <th>전화번호</th>
+            <td>010-1234-5678</td>
+        </tr>
+        <tr>
+            <th>이메일주소</th>
+            <td></td>
+        </tr>
+        <tr>
+            <th>집주소</th>
+            <td></td>
+        </tr>
+    </table>
+</body>
+</html>
